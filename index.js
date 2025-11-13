@@ -4,3 +4,4 @@ function greet() {
 }
 
 greet();
+greet();
