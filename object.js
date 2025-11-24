@@ -44,3 +44,26 @@ fish.displayType();
 const dog = Object.create(Animal);
 dog.type ="Dogs";
 dog.displayType();
+
+//ゲッターとセッター
+const myObj = {
+    a: 7,
+    get b(){
+      return this.a + 1;
+    },
+    set c(x){
+        this.a = x / 2;
+    },
+};
+
+console.log(myObj.b);
+myObj.c = 40;
+console.log(myObj.a);
+
+//オブジェクトの比較
+const fruit = {name:"apple"};
+const anotherFruit = fruit;
+console.log(fruit == anotherFruit);
+
+fruit.name ="orange";
+console.log(anotherFruit.name);

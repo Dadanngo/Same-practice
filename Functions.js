@@ -73,3 +73,17 @@ function loop(x){
     console.log(x);
 }
 loop(0);
+
+
+//デフォルト引数の変更
+function multiply(a,b) {
+    b = typeof b !== 'undefined' ? b : 1;
+    return a + b;
+}
+console.log(multiply(5));
+
+//ES6のデフォルト引数
+function multiply2(a, b =1) {
+    return a * b;
+}
+console.log(multiply2(5));

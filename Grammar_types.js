@@ -39,3 +39,8 @@ console.log(coffes[0]);
 
 const myList = ["home",, "work",/*空*/,]; //配列の途中に空要素を入れられる最後のカンマ2つはgit diffをきれいにするため
 console.log(myList);
+
+//今日の天気
+const weather = ["sunny","cloudy","rainy"];
+
+console.log(weather[1]);
